@@ -1,0 +1,109 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Hotel {
+  id        Int       @id @default(autoincrement())
+  name      String
+  location  String
+  rating    Float?
+  rooms     Room[]
+  amenities Amenity[]
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  phone     String
+  email     String
+  hotel_images    HotelImage[] // Optional field for hotel image URL
+}
+model HotelImage {
+  id       Int    @id @default(autoincrement())
+  url      String
+  hotelId  Int
+  hotel    Hotel  @relation(fields: [hotelId], references: [id])
+}
+
+model Room {
+  id          Int        @id @default(autoincrement())
+  hotelId     Int
+  hotel       Hotel      @relation(fields: [hotelId], references: [id])
+  roomNumber  String
+  type        String     // e.g., "Single", "Double", "Suite"
+  price       Float
+  capacity    Int
+  availability Boolean   @default(true)
+  bookings    Booking[]
+  room_images      RoomImage[]
+  room_amenities  RoomAmenity[]
+}
+model RoomAmenity {
+  id       Int    @id @default(autoincrement())
+  roomId   Int
+  room     Room   @relation(fields: [roomId], references: [id])
+  name     String // e.g., "WiFi", "Air Conditioning", "TV"
+}
+model RoomImage {
+  id      Int    @id @default(autoincrement())
+  url     String
+  roomId  Int
+  room    Room   @relation(fields: [roomId], references: [id])
+}
+
+model Booking {
+  id          Int       @id @default(autoincrement())
+  userId      Int
+  user        User      @relation(fields: [userId], references: [id])
+  roomId      Int
+  room        Room      @relation(fields: [roomId], references: [id])
+  checkIn     DateTime
+  checkOut    DateTime
+  status      String    // "pending", "confirmed", "cancelled"
+  guests      Guest[]
+  payment     Payment?
+  createdAt   DateTime  @default(now())
+}
+
+model Guest {
+  id         Int      @id @default(autoincrement())
+  bookingId  Int      @unique
+  booking    Booking  @relation(fields: [bookingId], references: [id])
+  name       String
+  age        Int
+}
+
+model User {
+  id        Int        @id @default(autoincrement())
+  username  String     @unique
+  email     String     @unique
+  password  String
+  bookings  Booking[]
+  role      String     @default("user") // "user", "admin"
+}
+
+model Payment {
+  id          Int      @id @default(autoincrement())
+  bookingId   Int @unique
+  booking     Booking  @relation(fields: [bookingId], references: [id])
+  amount      Float
+  method      String   // "credit_card", "paypal", "cash"
+  status      String   // "paid", "pending", "failed"
+  createdAt   DateTime @default(now())
+}
+
+model Amenity {
+  id       Int    @id @default(autoincrement())
+  hotelId  Int
+  hotel    Hotel  @relation(fields: [hotelId], references: [id])
+  name     String // e.g., "Pool", "WiFi", "Gym"
+}
+
