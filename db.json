@@ -1,0 +1,204 @@
+{
+  "hotels": [
+    {
+      "id": 1,
+      "name": "Grand Sydney Hotel",
+      "location": "Sydney CBD",
+      "price": 200,
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+  "features": ["swimming pool", "breakfast", "wifi", "gym"],
+  "roomTypes": ["Standard Room", "Deluxe Room", "Suite"]
+    },
+    {
+      "id": 2,
+      "name": "Harbour View Hotel",
+      "location": "Darling Harbour",
+      "price": 180,
+      "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
+      "features": ["breakfast", "wifi", "parking"],
+      "roomTypes": ["Single Room", "Double Room", "Family Room"]
+
+    },
+    {
+      "id": 3,
+      "name": "Melbourne Central Inn",
+      "location": "Melbourne CBD",
+      "price": 210,
+      "image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80",
+  "features": ["swimming pool", "spa", "wifi", "bar"],
+  "roomTypes": ["Standard Room", "Executive Room", "Suite"]
+    },
+    {
+      "id": 4,
+      "name": "Brisbane Riverside Hotel",
+      "location": "Brisbane River",
+      "price": 170,
+      "image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80",
+  "features": ["breakfast", "wifi", "parking", "gym"],
+  "roomTypes": ["Standard Room", "Deluxe Room", "Suite"]
+    },
+    {
+      "id": 5,
+      "name": "Perth Luxury Suites",
+      "location": "Perth City",
+      "price": 250,
+      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=400&q=80",
+  "features": ["swimming pool", "breakfast", "wifi", "spa"],
+  "roomTypes": ["Single Room", "Double Room", "Suite"]
+    },
+    {
+      "id": 6,
+      "name": "Adelaide Comfort Hotel",
+      "location": "Adelaide Central",
+      "price": 160,
+      "image": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=400&q=80",
+  "features": ["breakfast", "wifi", "parking", "bar"],
+  "roomTypes": ["Standard Room", "Deluxe Room", "Family Suite"]
+    },
+    {
+      "id": 7,
+      "name": "Gold Coast Beach Resort",
+      "location": "Gold Coast",
+      "price": 300,
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+  "features": ["swimming pool", "beachfront", "wifi", "spa"],
+  "roomTypes": ["Standard Room", "Ocean View Room", "Suite"]
+    },
+    {
+      "id": 8,
+      "name": "Canberra City Hotel",
+      "location": "Canberra",
+      "price": 140,
+      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+  "features": ["breakfast", "wifi", "parking"],
+  "roomTypes": ["Single Room", "Double Room", "Suite"]
+    },
+    {
+      "id": 9,
+      "name": "Darwin Tropical Inn",
+      "location": "Darwin",
+      "price": 190,
+      "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=400&q=80",
+  "features": ["swimming pool", "breakfast", "wifi", "bar"],
+  "roomTypes": ["Standard Room", "Deluxe Room", "Suite"]
+    },
+    {
+      "id": 10,
+      "name": "Hobart Waterfront Hotel",
+      "location": "Hobart",
+      "price": 175,
+      "image": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80",
+  "features": ["breakfast", "wifi", "parking", "gym"],
+  "roomTypes": ["Standard Room", "Executive Room", "Suite"]
+    },
+    {
+      "id": 11,
+      "name": "Cairns Rainforest Resort",
+      "location": "Cairns",
+      "price": 220,
+      "image": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80",
+  "features": ["swimming pool", "breakfast", "wifi", "spa"],
+  "roomTypes": ["Single Room", "Double Room", "Suite"]
+    },
+    {
+      "id": 12,
+      "name": "Newcastle Harbour Hotel",
+      "location": "Newcastle",
+      "price": 160,
+      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+  "features": ["breakfast", "wifi", "parking"],
+  "roomTypes": ["Standard Room", "Deluxe Room", "Suite"]
+    },
+    {
+      "id": 13,
+      "name": "Wollongong Seaside Inn",
+      "location": "Wollongong",
+      "price": 185,
+      "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",
+  "features": ["swimming pool", "beachfront", "wifi", "bar"],
+  "roomTypes": ["Standard Room", "Ocean View Room", "Suite"]
+    },
+    {
+      "id": 14,
+      "name": "Geelong Bay Hotel",
+      "location": "Geelong",
+      "price": 155,
+      "image": "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80",
+  "features": ["breakfast", "wifi", "parking"],
+  "roomTypes": ["Single Room", "Double Room", "Suite"]
+    },
+    {
+      "id": 15,
+      "name": "Townsville Marina Resort",
+      "location": "Townsville",
+      "price": 195,
+      "image": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=400&q=80",
+  "features": ["swimming pool", "breakfast", "wifi", "spa"],
+  "roomTypes": ["Standard Room", "Deluxe Room", "Suite"]
+    },
+    {
+      "id": 16,
+      "name": "Sunshine Coast Paradise Hotel",
+      "location": "Sunshine Coast",
+      "price": 230,
+      "image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=400&q=80",
+  "features": ["swimming pool", "beachfront", "wifi", "gym"],
+  "roomTypes": ["Standard Room", "Ocean View Room", "Suite"]
+    },
+    {
+      "id": 17,
+      "name": "Byron Bay Retreat",
+      "location": "Byron Bay",
+      "price": 260,
+      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=400&q=80",
+  "features": ["swimming pool", "breakfast", "wifi", "spa"],
+  "roomTypes": ["Single Room", "Double Room", "Suite"]
+    },
+    {
+      "id": 18,
+      "name": "Alice Springs Outback Hotel",
+      "location": "Alice Springs",
+      "price": 145,
+      "image": "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?auto=format&fit=crop&w=400&q=80",
+  "features": ["breakfast", "wifi", "parking"],
+  "roomTypes": ["Standard Room", "Deluxe Room", "Suite"]
+    },
+    {
+      "id": 19,
+      "name": "Fremantle Port Hotel",
+      "location": "Fremantle",
+      "price": 175,
+      "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+  "features": ["breakfast", "wifi", "parking", "bar"],
+  "roomTypes": ["Standard Room", "Deluxe Room", "Family Suite"]
+    },
+    {
+      "id": 20,
+      "name": "Launceston Heritage Inn",
+      "location": "Launceston",
+      "price": 165,
+      "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80",
+  "features": ["breakfast", "wifi", "parking"],
+  "roomTypes": ["Single Room", "Double Room", "Suite"]
+    },
+    {
+      "id": 21,
+      "name": "Rockhampton Riverside Hotel",
+      "location": "Rockhampton",
+      "price": 155,
+      "image": "https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?auto=format&fit=crop&w=400&q=80",
+  "features": ["swimming pool", "breakfast", "wifi", "gym"],
+  "roomTypes": ["Standard Room", "Deluxe Room", "Suite"]
+    },
+    {
+      "id": 22,
+      "name": "Mackay Marina Resort",
+      "location": "Mackay",
+      "price": 185,
+      "image": "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=crop&w=400&q=80",
+  "features": ["swimming pool", "breakfast", "wifi", "spa"],
+  "roomTypes": ["Single Room", "Double Room", "Suite"]
+    }
+  ],
+  "bookings": []
+}

@@ -1,0 +1,28 @@
+@import "@/styles/mixins";
+@import "@/styles/variables";
+.input {
+  @include input-style($border-color, $bg-color, $text-color);
+  @include flex-center;
+  padding: 0.75rem 1rem;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin: 10px 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+
+  &:focus {
+    border-color: $focus-color;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($focus-color, 0.2);
+  }
+
+  &::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+  }
+
+  &.error {
+    border-color: $error-color;
+    box-shadow: 0 0 0 2px rgba($error-color, 0.2);
+  }
+}
